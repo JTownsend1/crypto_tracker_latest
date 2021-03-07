@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          HELLO JONATHON!!!!
+          HELLO EDD!!!! IS THS APP WORKING?
         </a>
       </header>
     </div>
