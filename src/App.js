@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// import { Route, Switch, BrowserRouter } from 'react-router-dom';
+// import Homepage from './Homepage.js';
+// import CoinDetail from './CoinDetail1.js';
 
-function App() {
+import React from 'react'
+
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HELLO EDD!!!! IS THS APP WORKING?
-        </a>
-      </header>
+    <div>
+      Hello HELLLLLLLOOOOOOOOOO
+      <h1>YES!!!!!</h1>
+      {/* <BrowserRouter>
+        <Switch>
+          <Route exact path='/' render={() => <Homepage />}/>
+          <Route exact path='/Coin-detail/:coinid' render={() => <CoinDetail />}/>
+        </Switch>
+      </BrowserRouter> */}
     </div>
-  );
+  )
 }
-
-export default App;
