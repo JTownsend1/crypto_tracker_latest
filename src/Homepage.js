@@ -75,6 +75,19 @@ function Homepage() {
           />
         </form>
       </div>
+
+      <div className='coin-titles'>
+        {/* <div className='symbol'>symbol</div> */}
+        <div className='name'>name</div>
+        {/* <div className='code'>code</div> */}
+        <div className='coin-data-title-div'>
+            <div className='price'>price</div>
+            <div className='total-volume'>total volume</div>
+            <div className='daily-change'>change</div>
+            <div className='market-cap'>market cap</div>
+        </div>
+      </div>
+
       {/* {coins && coins.map(coin => <p>{coin}</p>) } */}
       {filteredCoins.map(coin => {
         return (

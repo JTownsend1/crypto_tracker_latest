@@ -1,6 +1,6 @@
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import Homepage from './Homepage.js';
-import CoinDetail from './CoinDetail1.js';
+import CoinDetail from './CoinDetail.js';
 
 import React from 'react'
 
