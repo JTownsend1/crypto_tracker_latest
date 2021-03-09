@@ -81,7 +81,7 @@ const Coin = ({
                 <img src={image} alt='crypto' />
             </div>
             <div className='coin-name'>
-                <h1>{name}</h1>
+                {name}
             </div>
             <div className='coin-symbol-div'>
                 <p className='coin-symbol'>{symbol}</p>

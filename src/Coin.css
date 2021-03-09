@@ -33,6 +33,7 @@
     display: flex;
     width: 70%; 
     text-align: left;
+    padding-left: 15%;
 
 }
 
@@ -94,25 +95,25 @@
     /* height: 30px; */
     width: 100%;
 
-  }
+}
 
-  .coin h1 {
+.coin h1 {
     font-size: 16px;
     width: 80%;
     padding-left: 8%;
-  }
+}
 
-  .coin-symbol {
+.coin-symbol {
     text-transform: uppercase;
 } 
 
 .red {
     color: #f00606;
-  }
+}
   
-  .green {
+.green {
     color: #11d811;
-  }
+}
 
 
  /* .coin h1 {

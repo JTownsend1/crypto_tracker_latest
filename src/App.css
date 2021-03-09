@@ -7,7 +7,7 @@
   font-family: 'Montserrat', sans-serif;
   background-color: #FFF1E0;
   color: #072c30;
-  font-size: 1.5vw;
+  font-size: 1vw;
 }
 
 .coin-app {
@@ -31,9 +31,17 @@
   text-align: center;
 }
 
+.form {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 .coin-input {
+  display: flex;
+  justify-content: center;
   padding-left: 16px;
-  width: 300px;
+  width: 25vw;
   height: 50px;
   border-radius: 6px;
   border: none;
@@ -50,7 +58,7 @@
 
 .coin-input::placeholder {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 1vw;
   text-align: center;
   text-align: left;
 }
@@ -83,14 +91,14 @@
   border: 5px;
   border: red;
   border-style: hidden;
-  font-size: 2vw;
+  font-size: 1vw;
   /* padding: 3%; */
 }
 
 .coin-data-title-div {
   display: flex;
   width: 70%;
-  font-size: 2vw;
+  font-size: 1vw;
 }
 
 .price {
@@ -100,7 +108,7 @@
   width: 15%;
   background-color: #0D7680;
   color: #e2e2e2;
-  font-size: 2vw;
+  font-size: 1vw;
 }
 
 .total-volume {
@@ -110,7 +118,7 @@
   width: 35%;
   background-color: #0D7680;
   color: #e2e2e2;
-  font-size: 2vw;
+  font-size: 1vw;
 }
 
 .market-cap {
@@ -120,7 +128,7 @@
   width: 35%;
   background-color: #0D7680;
   color: #e2e2e2;
-  font-size: 2vw;
+  font-size: 1vw;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
   
@@ -136,7 +144,7 @@
   width: 15%;
   background-color: #0D7680;
   color: #e2e2e2;
-  font-size: 2vw;
+  font-size: 1vw;
 }
 
 h1.coin-text {
