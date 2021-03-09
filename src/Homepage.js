@@ -13,6 +13,9 @@ function Homepage() {
 
 
   useEffect(() => {
+    setInterval(() => {
+        let x = 1;
+        x++;
     axios
     .get(
       'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false' 
@@ -26,24 +29,27 @@ function Homepage() {
     .catch(error => console.log(error));
     console.log("Hello")
     
+    console.log(x);
+    
   
   }, []);
+}, 5000 )
 
 
-// setInterval(() => {
-  // axios
-  // .get(
-  //   'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false' 
+// setTimeout(() => {
+//   axios
+//   .get(
+//     'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false' 
 
-  // )
-  // .then(res => {
-  //   setCoins(res.data);
-  //   console.log(res.data, "Hello setInterval");
+//   )
+//   .then(res => {
+//     setCoins(res.data);
+//     console.log(res.data, "Hello setInterval");
   
-  // })
-  // .catch(error => console.log(error));
-  // console.log("Hello")
-  // setCoins({name: 'hello', name: 'hello'})
+//   })
+//   .catch(error => console.log(error));
+//   console.log("Hello")
+//   setCoins({name: 'hello', name: 'hello'})
 // }, 5000 )
 
 
