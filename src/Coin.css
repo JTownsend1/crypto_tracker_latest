@@ -27,7 +27,8 @@
 
 .coin-img {
     display: flex;
-    width: 15%; 
+    width: 29px; 
+    height: 29px;
     text-align: left;
     /* padding-left: 2%; */
 
@@ -155,7 +156,8 @@
 
 .coin-img {
     display: flex;
-    width: 15%; 
+    width: 40px; 
+    height: 40px;
     text-align: left;
     padding-left: 2%;
 
