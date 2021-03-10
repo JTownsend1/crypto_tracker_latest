@@ -1,5 +1,166 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FFF1E0;
+  color: #072c30;
+  font-size: 18px;
+}
+
+.coin-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 64px;
+  color: rgb(153, 45, 45);
+}
+
+.coin-search {
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.coin-text {
+  margin-bottom: 32px;
+  text-align: center;
+  width: 50;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.coin-input {
+  display: flex;
+  justify-content: center;
+  padding-left: 16px;
+  /* width: 25vw; */
+  height: 50px;
+  border-radius: 6px;
+  border: none;
+  background-image: linear-gradient(
+    -225deg,
+    #0D7680 0%,
+    #cbd3d4 48%,
+    #042325 100%
+  );
+
+  color: #e2e2e2;
+  
+}
+
+.coin-input::placeholder {
+  color: #ffffff;
+  /* font-size: 12px; */
+  text-align: center;
+  text-align: left;
+}
+
+.coin-titles {
+  background-color: #042325;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 80px;
+  /* border-bottom: 1px solid rgb(13, 118, 128); */
+  width: 95vw;
+  border-radius: 6px;
+  /* opacity: 0; */
+  /* font-size: 1.5vw; */
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 24px;
+  /* padding-left: 3px; */
+  width: 30%; 
+  /* opacity: 0; */
+  background-color: #0D7680;
+  color: #e2e2e2;
+  /* font-size: 12px; */
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border: 5px;
+  border: red;
+  border-style: hidden;
+}
+
+
+.coin-data-title-div {
+  display: flex;
+  width: 70%;
+  /* font-size: 12px; */
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  background-color: #0D7680;
+  color: #e2e2e2;
+  /* font-size: 12px; */
+}
+
+.total-volume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 35%; */
+  width: 0%;
+  background-color: #0D7680;
+  color: #e2e2e2;
+  opacity: 0;
+  /* font-size: 12px; */
+}
+
+.market-cap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  background-color: #0D7680;
+  color: #e2e2e2;
+  /* font-size: 12px; */
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  
+}
+
+.daily-change {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: right; */
+  /* justify-content: right;
+  text-align: right; */
+  width: 25%;
+  background-color: #0D7680;
+  color: #e2e2e2;
+  /* font-size: 20px; */
+}
+
+h1.coin-text {
+  font-size: 30px;
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -91,21 +252,8 @@
   border: 5px;
   border: red;
   border-style: hidden;
-  /* font-size: 1vw; */
-  /* padding: 3%; */
 }
 
-/* .coin-img {
-  width: 10%;
-}
-
-.coin-name {
-  width: 40%;
-}
-
-.coin-sybol-div {
-  width: 50%;
-} */
 
 .coin-data-title-div {
   display: flex;
@@ -120,6 +268,7 @@
   width: 15%;
   background-color: #0D7680;
   color: #e2e2e2;
+  padding-left: 4%;
   /* font-size: 12px; */
 }
 
@@ -130,16 +279,19 @@
   width: 35%;
   background-color: #0D7680;
   color: #e2e2e2;
+  padding-left: 10%;
   /* font-size: 12px; */
+  opacity: 1;
 }
 
 .market-cap {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 35%;
+  width: 30%;
   background-color: #0D7680;
   color: #e2e2e2;
+  /* padding-right: 0.1%; */
   /* font-size: 12px; */
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -150,10 +302,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-left: 8%;
   /* text-align: right; */
   /* justify-content: right;
   text-align: right; */
-  width: 15%;
+  width: 20%;
   background-color: #0D7680;
   color: #e2e2e2;
   /* font-size: 20px; */
@@ -163,11 +316,4 @@ h1.coin-text {
   font-size: 30px;
 }
 
-/* div className='coin-titles'>
-        <div className='symbol'>symbol</div>
-        <div className='name'>name</div>
-        <div className='code'>code</div>
-        <div className='price'>price</div>
-        <div className='total-volume'>total volume</div>
-        <div className='daily-change'>daily change</div>
-        <div className='market-cap'>market cap</div> */
+}

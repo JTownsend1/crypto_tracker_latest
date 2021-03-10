@@ -1,50 +1,102 @@
 .container {
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
-  }
-
-.heading {
-    display: flex;
-    justify-content: center;
-    height: 100px;
-    align-items: center;
- }
-  
-.graph_container {
-    display: flex;
     /* justify-content: center; */
-    height: 200px;
 
   }
-  
-.y_label {
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    width: 20px;
-    align-items: right;
-    height: 200px;
 
-  }
-  
-.graph {
+  .graph {
     display: flex;
-    /* justify-content: center; */
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
-    width: 800px;
-    height: 450px;
+   
+    width: 93vw;
+
+    height: 300px;
   }
   
 .info {
-    display: block;
+    display: flex;
+
+   
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 90vw;
+    padding-top: 45px;
+    text-align: justify;
+    line-height: 1.6;
+  } 
+
+.heading {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    font-size: 35px;
+
+}
+.x_label {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+
+  }
+
+  .graph {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+   
+    width: 40vw;
+
+    height: 300px;
+  }
+  
+.info {
+    display: flex;
+
+   
+    margin-left: auto;
+    margin-right: auto;
+    width: 65vw;
     padding-top: 35px;
     text-align: justify;
     line-height: 1.6;
   } 
-  
+
+.heading {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    font-size: 35px;
+
+}
+.x_label {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+}
+

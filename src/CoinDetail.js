@@ -22,8 +22,13 @@ export default function CoinDetail() {
 
     const [isLoading, setLoading] = useState(true);
 
+
+    // const today = new Date()
+    // const finalDate = new Date(today)
+    // finalDate.setDate(today.getDate() - 365)
     
-    
+  
+
     useEffect(() => {
         let id = window.location.pathname.split('/')
         id = id[id.length - 1]
@@ -88,7 +93,7 @@ export default function CoinDetail() {
     const data = React.useMemo(
         () => [
           {
-            label: 'Series 1',
+            // label: 'Series 1',
             // data: [[1,2], [2,7], [3,12], [4,3]]
             // data: [["XXxxxx",3],["ddddddd",4],["edede",5],["XXxxxx",3],["ddddddd",4],["edede",5],["XXxxxx",3],["ddddddd",4],["edede",5],["XXxxxx",3],["ddddddd",4],["edede",5]],
           data: coinArray,
@@ -97,10 +102,13 @@ export default function CoinDetail() {
           // { primary: "jjjjjjjjjj", secondary: 12 },
           // { primary: "lklklkklklklklk", secondary: 15 },
           // ],
+       
           color: 'rgb(13, 118, 128)',
           showPoints: false
           
           }
+
+
         ],
        
       )
@@ -109,9 +117,9 @@ export default function CoinDetail() {
      
     const axes = React.useMemo(
         () => [
-          { primary: true, type: 'time', position: 'bottom', showGrid: false},
+          { primary: true, type: 'time', position: 'bottom', show: false },
           
-          { primary: false, type: 'linear', position: 'left', showGrid: true}
+          {  type: 'linear', position: 'left', showGrid: true}
         ],
         []
       )
@@ -141,26 +149,32 @@ export default function CoinDetail() {
 
         <div className='container'>
          
+              <div className='heading'>
+                {coinInfo.name}
+              </div>
 
-            <div className="heading">
-                <h1>{coinInfo.name}</h1>
-            </div>
-
-            <div classname='graph_container'>
+            {/* <div classname='graph_container'> */}
             {/* <div classname='y_label'>
                   <p>Price in USD</p>
                 </div> */}
                 
                 <div className='graph'>
-                    <Chart axes={axes} series={series} data={data} />
+                    <Chart  series={series} data={data} axes={axes}/>
                 </div>
+                {/* 31,536,000 */}
+                
+                <div className='x_label'>
+                  Price in USD for past year to date
+                </div>
+             
+                
                 {/* <div classname='y_label'>
                   <p>Price in USD</p>
                 </div> */}
               {/* <div classname='y_label'>
                 Time
               </div> */}
-            </div>
+            {/* </div> */}
             {}
             <div className='info'>
                 {coinDescription}
